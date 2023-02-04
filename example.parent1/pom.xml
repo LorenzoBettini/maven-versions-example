@@ -21,6 +21,11 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<modules>
+		<module>../example.aggregator1</module>
+		<module>../example.aggregator2</module>
+	</modules>
+
 	<build>
 		<pluginManagement>
 			<plugins>
