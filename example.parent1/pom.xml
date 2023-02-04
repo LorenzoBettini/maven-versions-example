@@ -23,6 +23,8 @@
 
 	<profiles>
 		<profile>
+			<!-- DON'T activate it, it's only to let Maven
+				detect the the children -->
 			<id>update-versions-only</id>
 			<modules>
 				<module>../example.aggregator1</module>
