@@ -6,10 +6,17 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<modules>
-		<module>../example.aggregator1</module>
-		<module>../example.aggregator2</module>
-	</modules>
+	<profiles>
+		<profile>
+			<!-- DON'T activate it, it's only to let Maven
+				detect the the children -->
+			<id>update-versions-only</id>
+			<modules>
+				<module>../example.aggregator1</module>
+				<module>../example.aggregator2</module>
+			</modules>
+		</profile>
+	</profiles>
 
 	<build>
 		<pluginManagement>
